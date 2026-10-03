@@ -1,10 +1,14 @@
 # Session notes
 
-## 2026-10-02: Research library standard
+## 2026-10-02: Published research library
 
-- CURRENT BRANCH: feat/research-guides
-- OPEN PRs: publication PR to be created in agents-phone.
-- EXTERNAL DEPENDENCIES: GitHub Pages deployment from agents-phone/main; merge approval under global rules.
-- Lars approved the three HTML layouts and requested a canonical research-documents-pe repository, domain publication, and reusable skill.
-- Added structured source content, a renderer, the research-video-guide skill, and a publication helper. Preserved prioritized linked watch tables.
-- Next: complete publication PR, obtain required merge approval, and verify the domain library.
+- CURRENT BRANCH: feat/research-guides (completion notes; canonical default is main).
+- OPEN PRs: site publication PR #5 merged as 502c92d; completion notes PR pending.
+- EXTERNAL DEPENDENCIES: GitHub Pages serves agents-phone/main. larsklander.com remains bound to agents-phone.
+- Canonical repository: https://github.com/larsklanderpe/research-documents-pe
+- Live library: https://larsklander.com/research-documents-pe/
+- All three guide URLs returned HTTP 200 with the library navigation and linked watch table present.
+- Installed and validated research-video-guide under C:\Users\Lars\.codex\skills. The repository keeps the canonical skill and approved layout references.
+- Renderer rebuilds all guides and the index from content JSON. Publish-Research.ps1 was exercised end to end through the merged site PR.
+- Lars approved keeping the existing domain path and requested an automatically maintained index. No new domain or DNS configuration is needed.
+- Future summaries: use the skill, add source content, render, publish through the existing site repository, verify URLs, return the direct guide and index links.
