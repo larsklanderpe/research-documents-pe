@@ -1,0 +1,115 @@
+{
+  "slug": "lauren-tan-implementation-brief",
+  "title": "Lauren Tan: verification before parallelism",
+  "subtitle": "Preliminary implementation brief from public posts and pstack source. Full video teardown pending transcript access.",
+  "video": "MN9dGgmLyso",
+  "other": "https://github.com/cursor/plugins/tree/main/pstack",
+  "date": "2026-10-02",
+  "intro": "<strong>The useful idea:</strong> build a dependable way for an agent to prove real application behavior, then expand concurrency. Lauren's public pstack README emphasizes quality and smaller code over raw output volume. This brief cross-checks the implementation against the published skills. It does not claim full viewing or transcript coverage of the linked videos.<br><br><strong>Source inventory:</strong> four unique posts, because the Denis Labelle link was supplied twice. They expose three native X videos and one YouTube interview. Whether the X videos contain overlapping excerpts remains unverified. <a href='https://x.com/poteto/status/2102050467505430555'>Lauren's Sep 21 talk</a> runs 38:02 according to the player (the initial tile showed remaining time); <a href='https://x.com/DenisLabelle/status/2091337807939706928'>Denis's Aug 22 repost</a> initially showed 55:33; <a href='https://x.com/0xCodila/status/2093074099559940200'>Codila's Aug 27 repost</a> initially showed 31:21; <a href='https://www.youtube.com/watch?v=MN9dGgmLyso'>Matt Pocock's interview</a> runs 1:06:45. Repost dates do not establish original recording dates.",
+  "actions": [
+    [
+      "Build one project-local verification skill",
+      "Record exact startup and readiness checks, a read-only health check, stable controls for the actual app, evidence capture, and cleanup. Discover these from the repository. Run the generated instructions on one real feature before accepting them.",
+      "Source: create-verification-skill. Proposed PE starting point: a locally runnable service or UI with test data."
+    ],
+    [
+      "Map user-visible features",
+      "Start with three to five features. For each, record how the user reaches it, the action sequence, prerequisites, observable success, and gotchas. Cover alternate entry points when they matter.",
+      "Source: create-verification-skill. A successful build does not establish user behavior."
+    ],
+    [
+      "Keep the map current",
+      "Compare each mapped feature with source, then exercise every feature live. Separate documentation drift, harness gaps, and product regressions. Keep maintenance edits within the verification directory; report product defects separately.",
+      "Source: maintain-verification-skill. Clean, changed, and blocked are distinct outcomes. A missing prerequisite is a coverage gap."
+    ],
+    [
+      "Prove the workflow before expanding it",
+      "The orchestrate playbook starts with a pilot through briefing, implementation, verification, and delivery. For larger programs, a coordinator assigns bounded work, records results, and manages dependencies. Give each writer an exclusive branch or worktree.",
+      "Source: orchestrate. Proposed PE adaptation: preserve your existing design, implementation, and merge approval gates."
+    ],
+    [
+      "Tie evidence to the revision being delivered",
+      "Record the PR and exact head SHA, checks run, and verdict. A changed head invalidates prior verification. CI is evidence for a verdict; a green indicator alone is insufficient for behavioral work. Use independent verification where impact or judgment warrants it.",
+      "Source: orchestrate. Include affected-feature runtime evidence in the review packet."
+    ],
+    [
+      "Measure useful outcomes",
+      "For a PE pilot, measure correction rate, escaped defects, time to a reviewed outcome, and human attention required. Record which failures the harness catches and which still require domain judgment.",
+      "Our proposed evaluation. The 2,500 PR figure is Lauren's self-report, not an independently audited quality or productivity result."
+    ]
+  ],
+  "prompts": [
+    [
+      "Discover a verification harness",
+      "Inspect this repository and propose a project-local verification skill. Identify the user surface, exact build/start command, readiness and health checks, existing ways to control it, evidence available, and isolation requirements. Map three representative user features. Cite repository paths for each finding. Mark untested assumptions. Present the proposal before writing code."
+    ],
+    [
+      "Define a feature proof",
+      "For [feature], use [test environment and fixture]. State its user entry points, prerequisites, actions, expected visible outcome, expected side effects, and evidence to retain. Include failure and alternate-entry cases where relevant. Distinguish runtime proof, unit tests, type checks, and blocked coverage."
+    ],
+    [
+      "Brief bounded work",
+      "Outcome: [one observable result]. Allowed paths: [paths]. Excluded paths: [paths]. Isolated worktree: [path]. Context: [source links]. Acceptance: [checkable criteria]. Verification: [exact commands and mapped feature]. Report: branch, PR, head SHA, checks run, evidence, deviations, and blockers. Preserve all PE approval gates; prepare a reviewable result before integration."
+    ],
+    [
+      "Audit verification drift",
+      "Compare the feature map with current source, then drive the mapped features in an isolated test instance. Report clean, changed, or blocked with coverage. Separate stale documentation, harness failure, and product regression. Propose documentation or harness corrections; do not silently change product behavior to satisfy the map."
+    ]
+  ],
+  "times": [
+    [
+      "17:05 to 22:05",
+      1025,
+      "Candidate: verification and constrained codebases. Starting point comes from a viewer's chapter comment; this five-minute excerpt has not been reviewed."
+    ],
+    [
+      "34:08 to 39:08",
+      2048,
+      "Candidate: coordinator agents and inner/outer loops. Viewer-supplied chapter; selected five-minute excerpt remains unverified."
+    ],
+    [
+      "50:23 to 55:23",
+      3023,
+      "Candidate: review and overnight merging. Viewer-supplied chapter; inspect the prerequisites and failure handling. Do not infer PE merge authorization from the talk."
+    ]
+  ],
+  "materials": [
+    [
+      "Official pstack source",
+      "https://github.com/cursor/plugins/tree/main/pstack",
+      "README reviewed. Cursor-specific installation uses /add-plugin pstack, followed by /setup-pstack and /poteto-mode. This is source research, not an installation recommendation for another harness."
+    ],
+    [
+      "Create a verification skill",
+      "https://github.com/cursor/plugins/blob/main/pstack/skills/create-verification-skill/SKILL.md",
+      "Full published skill reviewed: app control, evidence, feature map, and proving the generated skill."
+    ],
+    [
+      "Maintain a verification skill",
+      "https://github.com/cursor/plugins/blob/main/pstack/skills/maintain-verification-skill/SKILL.md",
+      "Full published skill reviewed. It distinguishes map drift from product defects and requires a live pass."
+    ],
+    [
+      "Coordinator playbook",
+      "https://github.com/cursor/plugins/blob/main/pstack/skills/poteto-mode/playbooks/orchestrate.md",
+      "Full published playbook reviewed. Covers pilot, briefs, ownership, queue, revision-specific verdicts, retry limits, and durable state."
+    ],
+    [
+      "Lauren's direct reply about merging",
+      "https://x.com/poteto/status/2102201638824157449",
+      "Her visible reply says her agents merge their own PRs without human review. That is a presenter claim, not evidence that PE's systems are ready for the same policy."
+    ],
+    [
+      "Interview chapter comment",
+      "https://www.youtube.com/watch?v=MN9dGgmLyso&lc=Ugz4wC8Y-VjxA-tS3Hl4AaABAg",
+      "The provisional watch route uses this viewer's chapter labels. No author chapter list or caption transcript was available in the inspected description."
+    ],
+    [
+      "Bugbot reference from Lauren's reply",
+      "https://cursor.com/bugbot",
+      "Lauren linked Cursor's Bugbot page. Product behavior and configuration were not evaluated in this brief."
+    ]
+  ],
+  "limits": "Coverage: the four post bodies, relevant visible replies, expanded YouTube description, pstack README, and three full implementation skill/playbook files. No full video transcript was obtained. YouTube explicitly showed captions unavailable; X exposed auto-generated caption controls but no exportable cue text through the inspected browser surface. Native X clip overlap and original recording sources remain unresolved. The watch route totals 15:00 at normal speed and is provisional, based on viewer chapter labels rather than reviewed excerpts. The practical actions and prompts are source-based synthesis and proposed PE adaptations, not a complete video summary. No software, account setting, schedule, or repository was changed. No public publication was performed. Completing the video teardown requires caption files, a transcript-bearing original, or accessible media plus a transcription path.",
+  "preliminary": true
+}
