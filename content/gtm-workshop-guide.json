@@ -1,0 +1,118 @@
+{
+  "slug": "gtm-workshop-guide",
+  "title": "GTM workshop",
+  "subtitle": "Customer preparation, useful drafts, and repeatable skills",
+  "video": "JZQsf5AXEig",
+  "other": "product-workshop-guide.html",
+  "intro": "The practical pattern is to perform a task with an agent, correct the result, save the process as a skill, and schedule it when repetition justifies a routine. For Lars, customer preparation and technical follow-up are the strongest starting points.",
+  "actions": [
+    [
+      "Teach the output you want",
+      "Provide strong writing examples, a preferred brief or email format, and explicit style rules. Correct a real output and ask the agent to preserve the preference.",
+      "Done when the next draft reflects your corrections. Inspect the result rather than assuming memory is perfect."
+    ],
+    [
+      "Build a morning customer brief",
+      "Connect or supply the calendar, relevant correspondence, meeting notes, and customer context. Define a short format covering decisions, commitments, open questions, and useful links.",
+      "Start with one morning brief. The presenter demonstrates a 7:30 a.m. brief and 4:30 p.m. inbox review."
+    ],
+    [
+      "Create customer-specific context",
+      "Collect account notes, unresolved questions, requests, tickets, usage where relevant, and releases that may benefit the customer.",
+      "PE application: prepare venue or customer conversations without searching across tools each time."
+    ],
+    [
+      "Add a technical answer role",
+      "Supply authoritative documentation and relevant code. Specify whether the output is a brief Slack answer, email, or customer walkthrough.",
+      "PE application: prepare technical response drafts grounded in documentation."
+    ],
+    [
+      "Preserve a successful workflow as a skill",
+      "Demonstrate the task or work through it together. Correct the result, save the procedure and output format, and repeat it on a fresh example.",
+      "A skill defines how to do the task; a routine defines when to repeat it."
+    ],
+    [
+      "Prepare messages for review",
+      "Research the context, produce a few sample drafts, refine the wording, then place the approved style of output into drafts.",
+      "The presenter prefers Gmail drafts and reviews CRM next steps before pushing updates."
+    ],
+    [
+      "Keep routines useful and quiet",
+      "Use twice-daily inbox review and selected weekly customer summaries as starting points. Review usage and eliminate redundant polling.",
+      "The presenter reduced 15- or 30-minute scans to twice daily because of noise and usage."
+    ]
+  ],
+  "prompts": [
+    [
+      "Customer meeting preparation",
+      "Prepare tomorrow's customer meeting brief from the supplied correspondence, notes, and tickets. Include unresolved questions, commitments, relevant changes, and decisions needed from me. Link the evidence and flag anything you cannot confirm."
+    ],
+    [
+      "Video or podcast research",
+      "Read the available captions or transcript for this recording. Extract the points relevant to [customer or topic], with timestamps and source links. Explain practical implications and proposed follow-up. Flag any point that requires visual inspection or has unclear transcription."
+    ],
+    [
+      "Turn a task into a skill",
+      "Document the workflow we just completed, including required inputs, sources, steps, output format, and review points. Preserve my corrections. Identify what could make the process more reliable and try it on one new example."
+    ],
+    [
+      "Customer follow-up draft",
+      "Use these meeting notes to draft a concise follow-up in my writing style. Include agreed actions, owners, dates where stated, and unanswered questions. Do not invent commitments. Prepare a draft for my review."
+    ],
+    [
+      "Routine review",
+      "Review the routines and usage data I provide. Identify noisy outputs, duplicate work, unnecessary tool calls, and frequencies that exceed my ability to act on the results. Propose changes and explain the likely effect."
+    ]
+  ],
+  "times": [
+    [
+      "3:01 to 7:44",
+      181,
+      "Tools, writing style, briefings, routines"
+    ],
+    [
+      "11:52 to 14:32",
+      712,
+      "Technical answers and next steps"
+    ],
+    [
+      "17:17 to 20:43",
+      1037,
+      "Teach skills and organize specialists"
+    ],
+    [
+      "43:57 to 46:22",
+      2637,
+      "Routine frequency and usage"
+    ],
+    [
+      "51:31 to 52:46",
+      3091,
+      "Onboarding and feedback"
+    ]
+  ],
+  "materials": [
+    [
+      "Product site",
+      "https://x.ai/bot",
+      "Linked in the published description."
+    ],
+    [
+      "Workshops",
+      "https://cursor.com/workshops",
+      "Linked in the published description."
+    ],
+    [
+      "Prospecting skill and weekly account rundown",
+      null,
+      "The presenter offers to share the prospecting skill. No direct download link was found in the description."
+    ],
+    [
+      "CRM and slide templates",
+      null,
+      "A CRM next-step format, Figma deck template, and multitask skill are demonstrated or mentioned. Downloadable copies were not found."
+    ]
+  ],
+  "limits": "Some account and usage examples are fictitious. The presenter describes preferred workflows, not guaranteed capability across every account or tool. Current product settings, access options, and pricing were not verified.",
+  "date": "2026-10-02"
+}

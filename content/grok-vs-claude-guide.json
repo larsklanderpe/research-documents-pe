@@ -1,0 +1,221 @@
+{
+  "slug": "grok-vs-claude-guide",
+  "title": "Grok Bot vs Claude",
+  "subtitle": "12 daily use cases: delegation, collaboration, and durable workflows",
+  "video": "douQXfdYGmA",
+  "other": "product-workshop-guide.html",
+  "intro": "Austin Marchese frames the choice as a workflow decision: hand off bounded work to an AI teammate, or work with AI to shape and refine the result. His preferences favor Grok Bot for lightweight discovery and Claude for iterative deliverables. For Lars, the useful takeaway is to choose the working mode first, then use the environment that already holds the right context.",
+  "actions": [
+    [
+      "Classify work before choosing a tool",
+      "List your recurring tasks. Mark each as delegation, collaboration, or a combination. Decide whether you need a summary, an editable deliverable, or a reliable repeated process.",
+      "Suggested PE application: delegate preparation and evidence gathering; collaborate on requirements, architecture, customer proposals, and final review."
+    ],
+    [
+      "Keep your authoritative context portable",
+      "Keep standards, templates, meeting summaries, decisions, and reviewed outputs in your existing files and repositories. A handoff should include sources and unresolved questions.",
+      "The presenter values local files. Local storage alone does not make an agent learn automatically; the workflow must retrieve and use that context."
+    ],
+    [
+      "Try one bounded briefing workflow",
+      "Supply the relevant inbox or customer correspondence and define which items need attention, the time window, and the output format. Start with a draft-only summary.",
+      "Video example: an executive assistant flags messages requiring a response by the end of the day. Judge usefulness by missed items and time saved."
+    ],
+    [
+      "Separate discovery from delivery",
+      "Ask for customer or competitor evidence and hypotheses first. Bring the promising findings into a reviewed requirements document before building.",
+      "Suggested PE application: gather venue feedback, then refine a specification using your standards and acceptance criteria."
+    ],
+    [
+      "Use a staged writing process",
+      "Work through evidence, outline, draft, and revision separately. Supply strong examples and ask for concrete language rather than broad promises.",
+      "For your customer documents, judge the output by accuracy, usefulness, and how much rewriting remains."
+    ],
+    [
+      "Create reusable artifacts for repeated questions",
+      "Choose a small reference page, decision guide, or customer explainer that your team would actually use. Define who updates it and where the source data comes from.",
+      "A useful prototype is not automatically a maintained live system. Specify refresh behavior before relying on current data."
+    ],
+    [
+      "Make proven automation durable",
+      "Experiment on a small task first. When it becomes operationally important, preserve the procedure as a skill or implement repeatable steps in code with appropriate checks.",
+      "For PE, keep approved procedures and code in the existing branch and review workflow. A skill remains agent-driven and is not equivalent to deterministic code."
+    ],
+    [
+      "Use opposing perspectives to find gaps",
+      "Ask for both the strongest case for an idea and the strongest objections, then reconcile them against evidence.",
+      "Try this on a proposed feature or customer offer. Agreement between generated perspectives is not independent validation."
+    ]
+  ],
+  "prompts": [
+    [
+      "Task routing",
+      "Review this list of recurring tasks. For each, recommend delegation, collaboration, or both. Explain the required sources, review points, output format, and simplest useful first trial. Prefer the tools and context I already have."
+    ],
+    [
+      "Meeting notes into decisions",
+      "Use these meeting notes to identify decisions, commitments, action owners, due dates explicitly stated, and unresolved questions. Link each item to its source. Preserve the reviewed summary in our existing project context and do not invent missing owners or dates."
+    ],
+    [
+      "Discovery handoff",
+      "Research this customer problem or competitor using the supplied sources and relevant public evidence. Return dated observations, hypotheses, source links, and gaps. Propose options for our product, distinguishing evidence from inference. Prepare a handoff for requirements review."
+    ],
+    [
+      "Concrete language review",
+      "Review this draft for vague promises and abstract wording. At each unclear point, ask what a reader would need to understand it. Suggest a concrete revision using only supported facts, examples, or numbers. Preserve the meaning and our writing style."
+    ],
+    [
+      "Opposing perspectives",
+      "Assess this proposed feature from two perspectives: likely value and strongest objections. For each, state assumptions and supporting evidence. Reconcile the findings into unresolved questions and a small experiment that could inform the decision."
+    ],
+    [
+      "Automation graduation",
+      "Review this trial workflow. Identify which steps can be encoded reliably, which require agent judgment, and what verification is needed. Propose a reusable procedure with inputs, outputs, failure handling, and review points."
+    ]
+  ],
+  "times": [
+    [
+      "0:18 to 2:21",
+      18,
+      "The delegation versus collaboration framework"
+    ],
+    [
+      "4:19 to 5:15",
+      259,
+      "Meeting context and ownership; stop before the sponsor segment"
+    ],
+    [
+      "8:42 to 12:38",
+      522,
+      "Reports, experiments, and staged content creation"
+    ],
+    [
+      "14:14 to 15:16",
+      854,
+      "Focused edits to proposals"
+    ],
+    [
+      "15:49 to 19:34",
+      949,
+      "Discovery, portable artifacts, and durable automation"
+    ],
+    [
+      "19:34 to 22:42",
+      1174,
+      "Opposing perspectives and new workflow ideas"
+    ]
+  ],
+  "materials": [
+    [
+      "Original video",
+      "https://www.youtube.com/watch?v=douQXfdYGmA",
+      "Austin Marchese; published September 26, 2026. Full captions and expanded description reviewed."
+    ],
+    [
+      "Obsidian",
+      "https://obsidian.md",
+      "Linked as his preferred knowledge-base companion. Destination content not reviewed."
+    ],
+    [
+      "Claude Design",
+      "https://claude.com/product/design",
+      "Linked for proposals and focused iteration. Current feature availability not independently verified."
+    ],
+    [
+      "Grok Bot introduction",
+      "https://x.ai/news/introducing-grok-bot",
+      "Linked in the description. Destination content not reviewed."
+    ],
+    [
+      "Granola sponsor link",
+      "https://go.granola.ai/austin-marchese",
+      "The video includes a paid sponsor segment. Promotional availability was not verified; this guide does not recommend a purchase."
+    ],
+    [
+      "BuildPartner",
+      "https://buildpartner.ai",
+      "The presenter promotes his own product and an expert-advice skill. Availability and performance not verified."
+    ],
+    [
+      "Referenced videos and on-screen prompts",
+      null,
+      "Description names a video about avoiding poor AI responses and a guide to building faster with Claude. Exact on-screen prompt text was not recovered from captions; prompts in this guide are original adaptations."
+    ]
+  ],
+  "limits": "This is a personal workflow comparison, not a controlled benchmark with matched prompts, repeated trials, cost measurements, or independently verified results. The presenter discusses Claude Chat, Cowork, Code, and Design together; these are distinct surfaces. Broad claims about model quality, visibility, speed, storage, hosting, and live artifact data should be treated as his observations or claims. Current product capabilities and pricing were not verified. The insurance savings example is anecdotal, and his own internet-bill negotiation produced no savings.",
+  "comparison": [
+    [
+      "Inbox and messages",
+      "Grok Bot",
+      "Low-friction triage and routines",
+      169
+    ],
+    [
+      "Meeting notes and insights",
+      "Claude",
+      "Keep context and refine decisions",
+      259
+    ],
+    [
+      "Online errands",
+      "Grok Bot, slight edge",
+      "Delegate a bounded task",
+      417
+    ],
+    [
+      "Reports and solutions",
+      "Claude",
+      "Review evidence and shape the deliverable",
+      522
+    ],
+    [
+      "Finding customers",
+      "Grok Bot, slight edge",
+      "Experiment quickly, then refine the process",
+      600
+    ],
+    [
+      "Marketing content",
+      "Claude",
+      "Work through research, outline, draft, revision",
+      681
+    ],
+    [
+      "Sales copy",
+      "Claude",
+      "Use specific evidence and remove vague language",
+      759
+    ],
+    [
+      "Client proposals",
+      "Claude",
+      "Make focused edits rather than regenerate everything",
+      854
+    ],
+    [
+      "Ideas and competitors",
+      "Grok Bot",
+      "Delegate broad discovery and prepare a handoff",
+      949
+    ],
+    [
+      "Apps and internal tools",
+      "Claude",
+      "Iterate on the actual deliverable",
+      1008
+    ],
+    [
+      "Repetitive work",
+      "Tie",
+      "Trial a routine; preserve important workflows",
+      1121
+    ],
+    [
+      "New uses and opposing perspectives",
+      "Grok Bot emphasis",
+      "The interface stimulated his experimentation; no formal head-to-head",
+      1174
+    ]
+  ],
+  "date": "2026-10-02"
+}

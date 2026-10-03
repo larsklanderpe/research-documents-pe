@@ -1,0 +1,104 @@
+{
+  "slug": "product-workshop-guide",
+  "title": "Product workshop",
+  "subtitle": "From customer evidence to an engineering handoff",
+  "video": "x5OawRpQxII",
+  "other": "gtm-workshop-guide.html",
+  "intro": "The practical value is a repeatable workflow: give specialists authoritative context, preserve their standards, and make each handoff explicit. Human review remains part of the delivery process.",
+  "actions": [
+    [
+      "Start with three roles",
+      "Product researcher: customer evidence and requirements. Designer: approved design system and examples. Engineering coordinator: technical decomposition and review. Add an analyst when you have reliable data sources.",
+      "PE application: use your existing standards and skills as the shared foundation. This is a suggested starting arrangement, not the exact team shown."
+    ],
+    [
+      "Prepare the source pack",
+      "Provide your requirements template, previous good specifications, customer evidence, design assets, coding standards, and source-of-truth links. Define which document wins if sources disagree.",
+      "Done when a specialist can produce the right format without another explanation."
+    ],
+    [
+      "Make the handoff explicit",
+      "Require each handoff to include the current document, scope, acceptance criteria, unresolved decisions, and the next responsible role. Put collaborating roles in a project conversation.",
+      "Done when research can become a reviewed specification without manually copying context."
+    ],
+    [
+      "Require inspectable evidence",
+      "Ask for citations and dates. For analytics, specify canonical tables, metric definitions, time windows, and known querying pitfalls.",
+      "The workshop emphasizes that curated data is a prerequisite for trusted analysis."
+    ],
+    [
+      "Compare attention with priorities",
+      "Have a coordinator summarize where communication and document activity indicate your attention went. Compare that with your stated priorities.",
+      "PE application: identify customer interruptions or operational work displacing planned delivery."
+    ],
+    [
+      "Monitor a small set of outcomes",
+      "Choose product or operational metrics you can act on. Set a regular summary and ask for investigation when a meaningful change appears.",
+      "Start at a useful frequency; the workshop demonstrates hourly monitoring, not a universal requirement."
+    ]
+  ],
+  "prompts": [
+    [
+      "Role setup",
+      "Your role is product research and requirements preparation. Use the linked PE standards, requirements template, and customer evidence. Cite sources, distinguish confirmed facts from assumptions, and identify missing decisions. Prepare drafts for review."
+    ],
+    [
+      "Research to requirements",
+      "Prepare a requirements draft using our template and the linked customer evidence. Define the problem, affected users, proposed first version, out-of-scope work, acceptance criteria, and unresolved questions. Link the supporting evidence and hand the draft over for review before implementation."
+    ],
+    [
+      "Engineering handoff",
+      "Review this approved requirements document and design. Identify dependencies, technical tasks, and verification needed. Preserve the scope and acceptance criteria. Surface blockers and decisions requiring my input before starting dependent work."
+    ],
+    [
+      "Attention review",
+      "Compare my stated priorities with the activity in the sources provided for this week. Summarize where my attention went, identify divergences, and link the evidence. Suggest the three most useful changes for next week."
+    ]
+  ],
+  "times": [
+    [
+      "13:14 to 16:20",
+      794,
+      "Specialists and connections"
+    ],
+    [
+      "25:00 to 30:38",
+      1500,
+      "Evidence, data, templates, and handoffs"
+    ],
+    [
+      "34:19 to 38:47",
+      2059,
+      "Engineering coordination and access blockers"
+    ],
+    [
+      "41:26 to 43:20",
+      2486,
+      "Human review and refinement"
+    ]
+  ],
+  "materials": [
+    [
+      "PM guide",
+      "https://x.ai/bot/guides/grok-bot-for-pms",
+      "Linked in the video description; destination content was not reviewed."
+    ],
+    [
+      "Product overview",
+      "https://docs.x.ai/grok-bot/overview",
+      "Linked in the video description; destination content was not reviewed."
+    ],
+    [
+      "Referenced setup post and design article",
+      null,
+      "Kevin's team-setup post and a design-system article from Lenny's newsletter are mentioned. Direct links were not found in the description."
+    ],
+    [
+      "Internal templates and skills",
+      null,
+      "Requirements template, design context, analytics formatting skills, and engineering conventions are discussed. Downloadable copies were not found."
+    ]
+  ],
+  "limits": "The presenters explicitly use fictitious data in the demonstration. A completed production feature is not shown. Persistent memory and learning are presenter claims, not independently tested here.",
+  "date": "2026-10-02"
+}
