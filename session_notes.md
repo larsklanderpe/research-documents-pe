@@ -1,5 +1,16 @@
 # Session notes
 
+## 2026-10-02: Lauren Tan preliminary brief
+
+- CURRENT BRANCH: feat/lauren-tan-brief
+- OPEN PRs: source and domain publication PRs being prepared.
+- EXTERNAL DEPENDENCIES: merge approval and GitHub Pages deployment.
+- Added the source-grounded implementation brief with explicit incomplete video coverage and a provisional watch route.
+- Added preliminary coverage support to the renderer so rebuilds preserve the evidence limits.
+- Validation: four guides render; previous guide files unchanged; new brief previously checked at desktop and narrow widths.
+- Next: merge approval, publication, and verify public guide and library index.
+
+
 ## 2026-10-02: Published research library
 
 - CURRENT BRANCH: feat/research-guides (completion notes; canonical default is main).
