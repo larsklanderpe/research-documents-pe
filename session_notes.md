@@ -1,5 +1,14 @@
 # Session notes
 
+## 2026-10-04: Lenny and Tibo Dots reading guide
+
+- CURRENT BRANCH: feat/lenny-dots-reading-guide, isolated publication clone.
+- OPEN PRs: source and website publication PRs being prepared.
+- EXTERNAL DEPENDENCIES: merge authorization and GitHub Pages deployment.
+- Added an original summary based on the complete available caption track and expanded description, with PE adaptations and a 12:53 prioritized watch route.
+- Validation: five guides render; all four earlier guide files remain unchanged; timestamps, navigation, offline support and script syntax checked. Local browser preview was blocked by browser security policy.
+- Next: integrate approved publication PRs and verify the public guide and library index.
+
 ## 2026-10-02: Lauren Tan preliminary brief
 
 - CURRENT BRANCH: feat/lauren-tan-brief
